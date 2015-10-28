@@ -12,7 +12,7 @@ public:
 private:
 	void checkPipeHandle(HANDLE pipeHandle);
 
-protected:
+private:
 	WindowEvent readEvent_;
 	WindowEvent writeEvent_;
 };
@@ -34,5 +34,8 @@ private:
 private:
 	HANDLE pipe_;
 	std::string pipeName_;
+	WindowEvent readEvent_;
+	WindowEvent writeEvent_;
 	bool isServer_;
 };
+

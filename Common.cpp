@@ -28,6 +28,19 @@ namespace Common
 		return ansi;  
 	}
 
+	std::wstring utf8ToUnicode(const std::string& str)
+	{
+		int len = str.size();
+		int unicodeLen = ::MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, NULL, 0);
+		wchar_t* pUnicode;
+		pUnicode = new wchar_t[unicodeLen + 1];
+		memset((void*)pUnicode, 0, (unicodeLen + 1) * sizeof(wchar_t));
+		::MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, (LPWSTR)pUnicode, unicodeLen);
+		std::wstring wstrReturn(pUnicode);
+		delete [] pUnicode;
+		return wstrReturn;
+	}
+
 	std::string toString(const char *fmt, ...)
 	{
 		char buffer[1024] = {0};

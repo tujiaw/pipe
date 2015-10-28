@@ -3,8 +3,11 @@
 #include "Exception.h"
 #include "Common.h"
 #include <winnt.h>
+#include <vector>
 
 #define MAX_PORTION_SIZE (512 * 1024)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 size_t Pipe::readByHandle(void *buffer, size_t len, HANDLE pipeHandle)
 {
@@ -138,3 +141,4 @@ void NamedPipe::checkPipeHandle(HANDLE pipeHandle)
 		throw IOException("Invalid pipe handle");
 	}
 }
+

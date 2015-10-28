@@ -3,7 +3,7 @@
 #include "Common.h"
 #include "Pipe.h"
 
-#define BUFSIZE (512 * 1024)
+#define BUFSIZE (1 * 1024)
 
 PipeServer::PipeServer(const std::string &name, DWORD milliseconds)
 	: milliseconds_(milliseconds), serverPipe_(INVALID_HANDLE_VALUE)

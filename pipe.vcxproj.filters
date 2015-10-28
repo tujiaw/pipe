@@ -39,6 +39,18 @@
     <ClInclude Include="Pipe.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="PipeClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="block_queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="windows_condition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mutex_lock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -60,6 +72,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Pipe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mutex_lock.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
