@@ -51,6 +51,9 @@
     <ClInclude Include="mutex_lock.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ConsoleColor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

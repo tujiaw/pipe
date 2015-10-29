@@ -81,6 +81,7 @@
   <ItemGroup>
     <ClInclude Include="block_queue.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="ConsoleColor.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="mutex_lock.h" />
     <ClInclude Include="Pipe.h" />
